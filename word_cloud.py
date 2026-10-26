@@ -1,22 +1,3 @@
-'''
-import streamlit as st
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-
-
-with open('Word cloud//data_science.txt', 'r') as f:
-    text = f.read()
-    print(text)
-
-_wordcloud = WordCloud(width=800, height=200, background_color='white').generate(text)
-
-plt.figure(figsize=(5, 7))
-plt.imshow(_wordcloud, interpolation='bilinear')    
-plt.axis('off')
-plt.show()
-'''
-
-
 import streamlit as st
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
